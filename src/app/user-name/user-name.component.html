@@ -1,0 +1,21 @@
+<div class="container m-5">
+    <div class="row">
+        <div class="col-12">
+            <form >
+                <div class="form-group">
+                    <label for="formGroupExampleInput">User_name</label>
+                    <input type="text" id="Name"class="form-control"  [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" placeholder="Enter Your Name"class="">
+                    <div class="col-12">
+                        {{ userName  }}
+                    </div>
+                </div>
+                  <button type="button" class="btn btn-primary" [disabled]="userName === ''" (click)="onClick($event)">Add</button>
+
+              </form>
+              
+        </div>
+        
+        
+    </div>
+    
+</div>
