@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable()
 //   {
-//   providedIn: 'root',
+//   providedIn: 'root',  // to no be avialbel to all app 
 // }
 export class CoursesService {
   private _courseSubject = new BehaviorSubject(null);
